@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Report</h1>
+
+      <div class="inp">
+        <form action="" id="form">
+            <input type="text" name="" 
+            placeholder="Search city" id="inp" />
+        </form>
+
+      <div class="iconTemp">
+        <img src="" alt="Weather" id="img" />
+        <span id="temp">30 Deg</span>
+      </div>
+      <div class="cloudCity">
+        <span id="cloud">Cloud</span>
+        <span id="city">City</span>
+      </div>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url("https://images.unsplash.com/photo-1467601558372-f99aeb150ad5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D");
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      background-color: black;
+    }
+    .container {
+      width: 30%;
+      /* border: 2px solid; */
+      text-align: center;
+      color: white;
+      box-shadow: 0px 0px 3px 8px lightblue;
+      border-radius: 20px;
+    }
+
+    .iconTemp {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .cloudCity {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      margin-top: 10px;
+      padding: 10px;
+    }
+
+    h1 {
+      padding: 10px;
+    }
+
+    input {
+      padding: 6px;
+      width: 80%;
+    }
+  </style>
+  <script src="weather.js"></script>
+</html>
